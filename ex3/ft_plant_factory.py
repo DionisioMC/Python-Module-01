@@ -1,5 +1,6 @@
 class Plant:
-    def __init__(self, name: str, height: float, growth: float, plant_age: int) -> None:
+    def __init__(self, name: str,
+                 height: float, growth: float, plant_age: int) -> None:
         self.name = name.capitalize()
         self.height = height
         self.growth = growth
@@ -19,7 +20,8 @@ class Plant:
         print(f"Growth this week: {round(total_growth, 1)}cm")
 
     def show(self) -> None:
-        print(f"{self.name}: {round(self.height, 1)}cm, {self.plant_age} days old")
+        print(f"{self.name}: ", end="")
+        print(f"{round(self.height, 1)}cm, {self.plant_age} days old")
 
 
 if __name__ == "__main__":
@@ -29,13 +31,13 @@ if __name__ == "__main__":
     cactus = Plant("cactus", 5.0, 0.2, 90)
     sunflower = Plant("sunflower", 80.0, 0.5, 45)
     fern = Plant("fern", 15.0, 0.2, 120)
-    print(f"Created: ", end="")
+    print("Created: ", end="")
     rose.show()
-    print(f"Created: ", end="")
+    print("Created: ", end="")
     oak.show()
-    print(f"Created: ", end="")
+    print("Created: ", end="")
     cactus.show()
-    print(f"Created: ", end="")
+    print("Created: ", end="")
     sunflower.show()
-    print(f"Created: ", end="")
+    print("Created: ", end="")
     fern.show()
