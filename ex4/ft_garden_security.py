@@ -3,7 +3,7 @@ class Plant:
                  height: float, growth: float, plant_age: int) -> None:
         self._name = name.capitalize()
         if height < 0:
-            self._height = 0
+            self._height = 0.0
             print(f"{self._name}: Error, height can't be negative")
         else:
             self._height = height
@@ -14,7 +14,8 @@ class Plant:
             self._plant_age = plant_age
         if growth <= 0:
             self._growth = 0.1
-            print(f"{self._name}: Error, growth rate can't be negative or zero")
+            print(f"{self._name}: ", end="")
+            print("Error, growth rate can't be negative or zero")
         else:
             self._growth = growth
 
@@ -49,7 +50,7 @@ class Plant:
             self._height = value
             print(f"Height updated: {self._height}cm")
 
-    def set_age(self, value: float):
+    def set_age(self, value: int):
         if value < 0:
             print(f"{self._name}: Error, age can't be negative")
             print("Age update rejected")
