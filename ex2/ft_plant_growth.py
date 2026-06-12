@@ -20,7 +20,7 @@ class Plant:
         print(f"Growth this week: {round(total_growth, 1)}cm")
 
     def show(self) -> None:
-        print(f"{self.name}: ")
+        print(f"{self.name}: ", end="")
         print(f"{round(self.height, 1)}cm, {self.plant_age} days old")
 
 

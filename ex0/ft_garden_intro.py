@@ -3,7 +3,7 @@ if __name__ == "__main__":
     plant = "rose"
     print(f"Plant: {plant.capitalize()}")
     height = "25cm"
-    print("Height: {height}")
+    print(f"Height: {height}")
     age = "30 days"
     print(age)
     print("\n=== End of Program ===")
